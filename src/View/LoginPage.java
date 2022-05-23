@@ -1,8 +1,11 @@
+package View;
 
 
 import java.awt.*;
 import java.awt.event.*;
-import javax.swing.*;  
+import javax.swing.*;
+
+import Model.Designer;  
  
   
 public class LoginPage extends JFrame implements ActionListener{
@@ -11,7 +14,7 @@ public class LoginPage extends JFrame implements ActionListener{
     JLabel userLabel, compLabel;  
     final JTextField  textField1, textField2;  
       
-    LoginPage(){
+    public LoginPage(){
          userLabel = new JLabel();  
          userLabel.setText("Username");  
          textField1 = new JTextField(15); 
@@ -51,6 +54,7 @@ public class LoginPage extends JFrame implements ActionListener{
             page.setSize(400, 200);   
             //page.getContentPane().add(wel_label); 
             page.setVisible(true);  
+            
             JOptionPane.showMessageDialog(btnNewButton, "Welcome: "+user.username+" of "+user.company);
             
             

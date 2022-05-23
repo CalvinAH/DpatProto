@@ -1,3 +1,4 @@
+package Model;
 
 public class Designer {
     private static Designer designer_instance = null;
